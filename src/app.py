@@ -55,7 +55,7 @@ class Multiply(Resource):
         
         # Step 4: Add the two numbers
         if (retJson["Status Code"] == 200):
-            retJson["Message"]  = x*y
+            retJson["Message"]  = float(x)*y
         
         # Step 5: Return the results 
         return jsonify(retJson)
@@ -67,7 +67,7 @@ class Divide(Resource):
         
         # Step 4: Add the two numbers
         if (retJson["Status Code"] == 200):
-            retJson["Message"]  = x/y
+            retJson["Message"]  = float(x)/y
         
         # Step 5: Return the results 
         return jsonify(retJson)
